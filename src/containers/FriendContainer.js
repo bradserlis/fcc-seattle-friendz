@@ -81,7 +81,7 @@ class FriendContainer extends Component {
                 <option value='lightblue'>Light Blue</option>
                 <option value='lightgreen'>Light Green</option>
                 <option value='salmon'>Salmon</option>
-                <option value='lavendar'>Lavender</option>
+                <option value='lavender'>Lavender</option>
                 <option value='lightpink'>Light Pink</option>
               </select>
              </label>
