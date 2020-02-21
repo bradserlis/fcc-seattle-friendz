@@ -3,16 +3,13 @@ import React, { Component } from 'react';
 import Friend from '../components/Friend';
 
 class FriendContainer extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
+    state = {
       name:'',
       color:'lightblue',
       isFavorite: false,
       location:'',
       friendsList: []
     }
-  }
 
   handleChange = (event) => {
     const target = event.target;
