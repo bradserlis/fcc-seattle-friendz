@@ -27,16 +27,11 @@ class FriendContainer extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    let nextId = this.state.friendsList.length ? 
-    this.state.friendsList[this.state.friendsList.length - 1].id + 1 
-    : 0;
-
     let friendObj = {
       name: this.state.name,
       color: this.state.color,
       isFavorite: this.state.isFavorite,
       location: this.state.location,
-      id: nextId
     }
 
     this.setState({
@@ -45,9 +40,9 @@ class FriendContainer extends Component {
   }
 
   renderFriends = () => {
-    return this.state.friendsList.map(friend => {
+    return this.state.friendsList.map((friend, i) => {
       return (
-        <li key={friend.id.toString()}>
+        <li key={i}>
           <Friend {...friend} />
         </li>
         )
