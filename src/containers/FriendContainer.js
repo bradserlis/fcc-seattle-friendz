@@ -63,7 +63,7 @@ class FriendContainer extends Component {
         <div className='friend-container-form'>
           <form onSubmit={this.handleSubmit}>
             <label>
-            Friend Name
+              Friend Name
               <input
                 type='text'
                 name='name'
@@ -104,14 +104,15 @@ class FriendContainer extends Component {
                />
              </label>
              <input className='submit' type='submit' />
-          </form>
-        </div>
+            </form>
+          </div>
         <div className='friends-list'>
-          <Friend name='number 1' />
-          <Friend name='number 2' />
+          <ul>
+            {this.renderFriends()}
+          </ul>
         </div>
       </div>
-      )
+    )
   }
 }
 
