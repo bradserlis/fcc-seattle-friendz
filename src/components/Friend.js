@@ -8,7 +8,7 @@ export default class Friend extends Component {
         style={{background: this.props.color}}
         >
         <div className="friend-header">
-          {this.props.isFavorite && <h3> 🌟 </h3>}
+          {this.props.isFavorite && <h3> <span role='img'>🌟</span> </h3>}
           <p className='subtle-text'>Friend Component</p>
         </div>
         <div className="friend-contact">
