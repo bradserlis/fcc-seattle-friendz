@@ -36,6 +36,14 @@ body {
   padding: 10px;
 }
 
+.friend-container-form label{
+  margin: 10px;
+}
+
+.friend-container-form input{
+  margin: 5px;
+}
+
 .submit input{
   margin: 5px auto;
   display: block;
@@ -59,6 +67,7 @@ body {
   border: 1px solid grey;
   padding: 20px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .skills-form label{
@@ -131,20 +140,27 @@ margin-bottom: 10px;
     flex-direction: column;
   }
 
-.friend-container-form label {
-  font-size: 10px;
-}
+  .friend-container-form label {
+    font-size: 10px;
+    margin: 0 0 5px 0;
+  }
 
-.friends-list ul{
-  padding-left: 0;
-}
+  .friend-container-form input{
+    margin-left: 0;
+  }
 
-.skills-form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
+  .skills-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .friends-list ul{
+    padding-left: 0;
+  }
 
   .friend-component{
     width: 200px;
