@@ -1,22 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Friend extends Component {
-  render() {
+const Friend = (props) => {
     return (
       <div 
         className="friend-component"
-        style={{background: this.props.color}}
+        style={{background: props.color}}
         >
         <div className="friend-header">
-          {this.props.isFavorite && <h3> <span role='img'>🌟</span> </h3>}
+          {props.isFavorite && <h3> <span role='img'>🌟</span> </h3>}
           <p className='subtle-text'>Friend Component</p>
         </div>
         <div className="friend-contact">
-          <h4>{this.props.name} </h4>
-          {this.props.location && <h4>Location: {this.props.location} </h4>}
+          <h4>{props.name} </h4>
+          {props.location && <h4>Location: {props.location} </h4>}
         </div>
         <div className="skill-list" />
       </div>
     );
-  }
 }
+
+export default Friend;
